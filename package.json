@@ -1,25 +1,14 @@
 {
-  "name": "kf_crm_lerna",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "pkgtemp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "pnpm --filter pkg* run build",
-    "preinstall": "npx only-allow pnpm",
-    "changeset": "changeset",
-    "release": "changeset publish --access public --otp 1.0.0",
-    "version-packages": "changeset version",
-    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "darylsong",
-  "license": "ISC",
   "devDependencies": {
-    "father-build": "^1.22.5"
-  },
-  "dependencies": {
-    "@changesets/cli": "^2.26.2",
-    "react": "^18.2.0",
-    "rimraf": "^5.0.1"
+    "vite": "^4.4.0"
   }
 }

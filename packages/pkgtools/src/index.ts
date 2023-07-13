@@ -1,1 +1,1 @@
-export const calNum = (v: number) => v % 2;
+export const calNum = (v: number) => (v + 1);

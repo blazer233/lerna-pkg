@@ -1,5 +1,5 @@
 import { calNum } from 'pkgtools';
-
+console.log(calNum)
 export function setupCounter(element) {
   let counter = 0;
   const setCounter = count => {
