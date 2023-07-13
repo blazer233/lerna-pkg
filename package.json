@@ -7,6 +7,7 @@
     "build": "pnpm --filter pkg* run build",
     "preinstall": "npx only-allow pnpm",
     "changeset": "changeset",
+    "release": "changeset publish --access public --otp 1.0.0",
     "version-packages": "changeset version",
     "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules"
   },

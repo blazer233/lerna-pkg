@@ -1,24 +1,16 @@
 {
   "name": "pkgtools",
-  "version": "2.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "release1": "bumpp --commit --push --tag",
-    "build": "father-build",
-    "watch": "father-build --watch"
+    "build": "rollup -c"
   },
-  "author": "qi.futao",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.27.2",
-    "pkgcrm": "workspace:*"
+  "exports": "./dist/bundle.js",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "rollup": "^3.26.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "^5.1.6"
   }
 }
