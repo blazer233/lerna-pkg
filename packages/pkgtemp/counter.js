@@ -1,10 +1,11 @@
-import { calNum } from 'pkgtools';
+import { fixedToWByValueNum } from 'pkgtools';
 
 export function setupCounter(element) {
   let counter = 0;
   const setCounter = count => {
-    counter = calNum(count);
-    element.innerHTML = `count is ${counter}`;
+    element.innerHTML = `count is ${count} ${fixedToWByValueNum(
+      Math.random() * 100000000
+    )}`;
   };
   element.addEventListener('click', () => setCounter(counter + 1));
   setCounter(0);
