@@ -12,6 +12,6 @@
     "vite": "^4.4.0"
   },
   "dependencies": {
-    "pkgtools": "workspace:^1.0.0"
+    "pkgtools": "*"
   }
 }
