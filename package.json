@@ -7,10 +7,8 @@
     "build": "pnpm --filter pkgtools run build",
     "dev": "pnpm --filter pkgtemp run dev",
     "preinstall": "npx only-allow pnpm",
-    "changeset": "changeset",
-    "release": "changeset publish --access public --otp 1.0.0",
-    "version-packages": "changeset version",
-    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules"
+    "tools-md": "npx changeset",
+    "tools-version": "changeset version"
   },
   "keywords": [],
   "author": "darylsong",
