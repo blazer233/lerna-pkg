@@ -4,16 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm --filter pkgtools run build",
-    "dev": "pnpm --filter pkgtemp run dev",
     "preinstall": "npx only-allow pnpm",
-    "tools-md": "npx changeset",
-    "tools-version": "changeset version"
+    "dev": "pnpm --filter pkgtemp run dev",
+    "build": "pnpm --filter pkgtemp run build",
+    "react:dev": "pnpm --filter pkgreact run dev",
+    "react:build": "pnpm --filter pkgreact run build",
+    "tools:build": "pnpm --filter pkgtools run build",
+    "tool:install":"pnpm install pkgtools -r --filter pkgreact",
+    "tools:md": "npx changeset",
+    "tools:version": "changeset version"
   },
   "keywords": [],
   "author": "darylsong",
   "license": "ISC",
   "dependencies": {
     "@changesets/cli": "^2.26.2"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.7",
+    "nx": "15.9.3",
+    "@nrwl/nx-cloud": "latest"
   }
 }
